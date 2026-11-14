@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Cinder Reach</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/styles.css">
+<style>html,body{margin:0}body{font-size:15px}[hidden]{display:none!important}</style>
+</head>
+<body>
+<div class="mast"><div class="in">
+  <h1>Cinder <b>Reach</b></h1>
+  <span id="game-head" hidden style="display:contents">
+    <label class="dim" for="psel" style="font-size:13px">Planet</label><select id="psel"></select>
+    <span id="clock" class="mono"></span>
+    <div class="sp"><span class="who" id="who"></span><button class="sm" data-act="logout">Sign out</button></div>
+  </span>
+</div></div>
+
+<div class="bar" id="bar" hidden>
+  <div class="in stores">
+    <div class="store r0"><div class="k"><i></i>METAL</div><div class="v" id="v0">0</div><div class="r" id="h0"></div></div>
+    <div class="store r1"><div class="k"><i></i>CRYSTAL</div><div class="v" id="v1">0</div><div class="r" id="h1"></div></div>
+    <div class="store r2"><div class="k"><i></i>DEUT</div><div class="v" id="v2">0</div><div class="r" id="h2"></div></div>
+    <div class="store nrg"><div class="k"><i></i>ENERGY</div><div class="v" id="vE">0</div><div class="r" id="hE"></div></div>
+  </div>
+  <nav class="in tabs" id="tabs" aria-label="Sections"></nav>
+</div>
+
+<div class="in" id="alert" hidden></div>
+<main class="in" id="view"></main>
+<div id="toast" role="status" hidden></div>
+<script type="module" src="/dist/app.js"></script>
+</body>
+</html>
